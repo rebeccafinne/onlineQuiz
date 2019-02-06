@@ -1,0 +1,23 @@
+body{
+  justify-content: center;
+  text-align: center;
+}
+
+.buttonContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  width: 40%;
+  text-align: center;
+  margin: auto;
+}
+
+.answerButton{
+  background-color: lightpink;
+
+
+}
+
+#gameOver{
+  display: none;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+
+    <script src="scrips.js"></script>
+
+
+    <title>Online Quiz</title>
+
+
+
+  </head>
+
+  <body>
+    <h2 id="heading">Welcome to the Quiz!</h2>
+
+
+
+    <p id="Question">This is the question</p>
+
+    <div class="buttonContainer">
+
+      <button class="answerButton" id="a1" type="button" onclick="guessMade(this.id)">Answer 1</button>
+      <button class="answerButton" id="a2" type="button" onclick="guessMade(this.id)">Answer 2</button>
+      <button class="answerButton" id="a3" type="button" onclick="guessMade(this.id)">Answer 3</button>
+      <button class="answerButton" id="a4" type="button" onclick="guessMade(this.id)">Answer 4</button>
+    </div>
+
+      <div id="feedback"> </div>
+
+      <button id="nextQuestion" type="button" onClick="setUp()">Next Question</button>
+
+      <div id="gameOver">Game Finished!</div>
+
+      <button id="tryAgain" type="button" onClick="resetGame()">Try Again</button>
+
+
+
+  </body>
+
+</html>
