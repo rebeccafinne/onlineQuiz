@@ -5,6 +5,9 @@ var usedAnswers = [];
 var correctAnswers = ["Dog", "b"];
 var amountCorrect = 0;
 var nbrOfQuestionsAnswered = 0;
+var nbrOfQuestions = questions.length;
+var nbrOfAnswers = answers.length;
+
 
 $(document).ready(function() {
   document.getElementById("nextQuestion").style.display = "none";
@@ -13,7 +16,8 @@ $(document).ready(function() {
 
 
 function setUp(){
-  if(questions.length === 0){
+  console.log(questions);
+  if(nbrOfQuestionsAnswered === nbrOfQuestions){
     gameFinished();
     return;
 
@@ -91,13 +95,13 @@ function gameFinished(){
 }
 
 function resetGame(){
-  for(var i = 0; i < usedQuestions.length; i++){
+  for(var i = 0; i < nbrOfQuestions; i++){
     var element = usedQuestions.shift();
     questions.push(element);
 
   }
 
-  for(var j = 0; j < usedAnswers.length; j++){
+  for(var j = 0; j < nbrOfAnswers; j++){
     var element1 = usedAnswers.shift();
     answers.push(element1);
   }
@@ -108,6 +112,9 @@ function resetGame(){
   document.getElementById("a2").style.display = "block";
   document.getElementById("a3").style.display = "block";
   document.getElementById("a4").style.display = "block";
+
+  nbrOfQuestionsAnswered = 0;
+  amountCorrect = 0;
 
   setUp();
 
