@@ -1,21 +1,61 @@
 body{
   justify-content: center;
   text-align: center;
+  background-color: #B1C3F5;
+}
+
+button{
+  background-color: #7798F3;
+  color: white;
+  box-shadow: 2px 3px 5px #888888;
 }
 
 .buttonContainer{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-  width: 40%;
+  grid-gap: 15px;
+  width: 415px;;
   text-align: center;
   margin: auto;
 }
 
 .answerButton{
-  background-color: lightpink;
 
+  width: 200px;
+  height: 100px;
+  font-size: 20px;
 
+}
+
+button:hover{
+  background-color: #3055B9;
+}
+
+h2{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: black;
+
+}
+
+p{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: black;
+  font-size: 20px;
+}
+
+#feedback{
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+.forwardButton{
+  margin: auto;
+  width: 415px;
+  height: 50px;
+  font-size: 16px;
 }
 
 #gameOver{
